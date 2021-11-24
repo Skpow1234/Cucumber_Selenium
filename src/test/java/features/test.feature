@@ -1,12 +1,6 @@
 Feature: Registrarse en efset.org
   Como usuario quiero registrarme y logearme en la pagina de efset
 
-  Background:
-    Given estoy en la página principal de efset.org
-    And tengo internet
-    And quiero crear una cuenta en "efset.org"
-
-
   Scenario: Crear una cuenta en "efset.org"
     Given estoy en la página principal de efset.org
     When doy click en el botón de "Login"

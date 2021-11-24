@@ -102,7 +102,7 @@ public class Test {
         lastname.sendKeys("Hurtado Villani");
         driver.findElement(By.id("email"));
         WebElement username=driver.findElement(By.id("email"));
-        username.sendKeys("thenewgodsk1@gmail.com");//Cambiar correo cada que se corre una prueba
+        username.sendKeys("thenewgodsk1@gmail.com");//Cambiar correo cada que se corre una prueba, puede usar otro correo
         driver.findElement(By.id("password"));
         WebElement password= driver.findElement(By.id("password"));
         password.sendKeys("Skpow1234");
@@ -116,8 +116,4 @@ public class Test {
         WebElement signUpBtnLocator = driver.findElement(By.id("submit-form-btn"));
         signUpBtnLocator.click();
     }
-
-
-
-
 }
