@@ -25,8 +25,11 @@ public class Test3 {
 
     @Given("elegir video")
     public void elegir_video() {
-        WebElement input = driver.findElement(By.id("search"));
+        WebElement input = driver.findElement(By.xpath("/html/body/ytd-app/div/div/ytd-masthead/div[3]/div[2]/ytd-searchbox/form/div[1]/div[1]/input"));
         input.sendKeys("La Humanidad No Puede Reproducirse Desde Hace 18 Años");
+
+        WebElement sendButton = driver.findElement(By.id("search-icon-legacy"));
+        sendButton.click();
     }
 
 
