@@ -23,13 +23,20 @@ public class Test3 {
         driver.manage().window().maximize();
     }
 
-    @Given("elegir video")
+    @Given("buscar video")
     public void elegir_video() {
         WebElement input = driver.findElement(By.xpath("/html/body/ytd-app/div/div/ytd-masthead/div[3]/div[2]/ytd-searchbox/form/div[1]/div[1]/input"));
         input.sendKeys("La Humanidad No Puede Reproducirse Desde Hace 18 Años");
 
         WebElement sendButton = driver.findElement(By.id("search-icon-legacy"));
         sendButton.click();
+
+        WebElement select = driver.findElement(By.id("title-wrapper"));
+        select.click();
+        //driver.findElement(By.xpath("/html/body/ytd-app/div/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-shelf-renderer[1]/div[1]/div[2]/ytd-vertical-list-renderer/div[1]/ytd-video-renderer[3]/div[1]/ytd-thumbnail/a/yt-img-shadow/img")).click();
+
+
+        //El Mundo Colapsa Tras 18 Años En Los Que Nadie Puede Reproducirse ( Resumen de Peliculas )
     }
 
 
